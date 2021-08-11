@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 import os
-from functionalities.functionalities import initWindow, speaking, getAudio, windowSpeechRecognition
+from LendoTextoEmÁudio.functionalities.functionalities import initWindow, speaking, getAudio, windowSpeechRecognition
 from inspect import Traceback
 
 windowOne, windowTwo = initWindow(), None
