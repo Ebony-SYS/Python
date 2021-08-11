@@ -1,4 +1,4 @@
-# Lendo texto em aúdio.
+# Lendo texto em áudio.
 
 ## Funcionalidade
     Busca arquivo de texto. (TXT, DOCX, PDF, CSV, JSON)
