@@ -6,13 +6,14 @@ from playsound import playsound
 
 
 def initWindow():
+    sg.theme('Dark')
     fileTypes = [('Todos os arquivos', '*.*')]
-    layout = [[sg.Text('Selecione um arquivo para começar')],
+    layout = [[sg.Text('Escolha um arquivo para iniciar!!!')],
               [sg.Text(size=(23, 1), key='fileSelected')],
-              [sg.Button('speakText', key='speakText'),
-               sg.Input(size=(25, 1), key='-FILE-'),
-               sg.FileBrowse(fileTypes=fileTypes, key='fileBrowse'),
-               sg.Button('fileReading', key='fileReading')]]
+              [  # sg.Button('Ouvir', key='speakText'),
+                  sg.Input(size=(25, 1), key='-FILE-'),
+                  sg.FileBrowse(file_types=fileTypes, key='fileBrowse'),
+                  sg.Button('Ler texto', key='fileReading')]]
 
     return sg.Window('text reading', layout=layout, finalize=True, element_justification='c')
 
