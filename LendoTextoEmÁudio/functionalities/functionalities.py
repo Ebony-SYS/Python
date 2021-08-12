@@ -23,7 +23,12 @@ def windowSpeechRecognition():
 
 
 def getAudio():
-    ...
+    rd = sr.Recognizer()
+    with sr.Microphone() as source:
+        audio = rd.listen(source)
+        said = ''
+        said = rd.recognize_google(audio, language='pt-BR')
+    return said
 
 
 def speaking():
