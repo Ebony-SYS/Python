@@ -1,35 +1,32 @@
 import PySimpleGUI as sg
 import os
-import speech_recognition as sr
-from gtts import gTTS
-from playsound import playsound
+from inspect import Traceback
+from TextoemAudio.functionalities.functionalities import initWindow, Speaking
 
+windowOne = initWindow()
 
-def initWindow():
-    sg.theme('Dark')
-    fileTypes = [('Todos os arquivos', '*.*')]
-    layout = [[sg.Text('Escolha um arquivo para iniciar!!!')],
-              [sg.Text(size=(23, 1), key='fileSelected')],
-              [  # sg.Button('Ouvir', key='speakText'),
-                  sg.Input(size=(25, 1), key='-FILE-'),
-                  sg.FileBrowse(file_types=fileTypes, key='fileBrowse'),
-                  sg.Button('Ler texto', key='fileReading')]]
+while True:
+    window, event, values = sg.read_all_windows()
 
-    return sg.Window('text reading', layout=layout, finalize=True, element_justification='c')
+    if window == windowOne and event == 'Exit' or event == sg.WIN_CLOSED:
+        break
 
+    if window == windowOne and event == 'fileReading':
+        filePath = values['-FILE-']
+        fileName = os.path.basename(filePath)
+        window['fileSelected'].update(f'lido → {fileName}', text_color='green')
 
-def windowSpeechRecognition():
-    ...
+        try:
+            if fileName[-4:] == '.txt':
+                with open(filePath) as text_to_read:
+                    txt = text_to_read.read()
+                    Speaking(txt)
+            else:
+                window['fileSelected'].update('Ops, ainda não suporto este arquivo!', text_color='red')
+        except:
+            window['fileSelected'].update('Ops, este arquivo está vazio!', text_color='red')
 
+        if filePath == '':
+            window['fileSelected'].update('Hey, selecione um arquivo!', text_color='red')
 
-def getAudio():
-    rd = sr.Recognizer()
-    with sr.Microphone() as source:
-        audio = rd.listen(source)
-        said = ''
-        said = rd.recognize_google(audio, language='pt-BR')
-    return said
-
-
-def speaking():
-    ...
+window.close()
