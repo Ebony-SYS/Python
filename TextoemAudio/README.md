@@ -8,11 +8,12 @@
     Pycharm
 
 ## LIBS
-    Docx
-    Speec_recognition
-    Playsound
+    playsound
     PySimpleGUI
-    PyGame
+    inspect
+    os
+    speech_recognition
+    gtts
 
 ---
 Acompanhe o desenvolvimento → [Canal códigos simples](https://www.youtube.com/channel/UC8fRZfYGd21_D8DwuEcFuHw)
