@@ -1,6 +1,5 @@
 import PySimpleGUI as sg
 import os
-from PySimpleGUI.PySimpleGUI import COLOR_SCHEME, ColorChooserButton
 from faker import Faker
 
 sg.theme('Darkblue')
