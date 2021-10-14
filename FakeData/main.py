@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import os
+from PySimpleGUI.PySimpleGUI import COLOR_SCHEME, ColorChooserButton
 from faker import Faker
 
 sg.theme('Darkblue')
@@ -20,11 +21,11 @@ layout = [
     [sg.Button('CPF', size=(20,0)), sg.Input(key='cpf',size=(50,0))],
     [sg.Button('RG', size=(20,0)), sg.Input(key='rg', size=(50,0))],
     [sg.Text(size=(60, 1), key='-OUTPUT-')],
-    [sg.Button('Gerar todos os dados'), sg.Button('Salvar Dados'), sg.Button('Finalizar'),
-     sg.Button('@ebony.programador')]
+    [sg.Button('Gerar todos os dados', size=(16)), sg.Button('Salvar Dados', size=(12)), 
+     sg.Button('Finalizar', size=(12)), sg.Button('@ebony.programador', button_color='lightgreen', size=(19))]
 ]
 
-window = sg.Window('Dados Aleatórios | @ebony.programador | EBONY SYS', layout=layout)
+window = sg.Window('Dados Aleatórios | EBONY SYS', layout=layout)
 
 fake = Faker('pt-BR')
 Faker.seed(0)
@@ -32,7 +33,7 @@ Faker.seed(0)
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Finalizar':
-        break
+        break       
 
     elif event == "Nome":
         nameRandom = fake.unique.name()
