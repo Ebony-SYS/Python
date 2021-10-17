@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
 import os
 from inspect import Traceback
-from TextoemAudio.functionalities.functionalities import initWindow, Speaking
+from functionalities.functionalities import initWindow, Speaking
 
 windowOne = initWindow()
 
