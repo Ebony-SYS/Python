@@ -34,9 +34,6 @@ class Aplication:
         self.frame3.place(relx=0, rely=0.95, relwidth=1, relheight=0.07)
 
     def buttonFirstWindow(self):
-
-        
-
         self.btSnake = Button(self.frame2, text='Snake', background='#3a3b3c', font='Helvética 30',
                               foreground='white')
         self.btSnake.place(relx=0.03, rely=0.03, relwidth=0.45, relheight=0.45)
