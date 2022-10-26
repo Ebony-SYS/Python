@@ -209,3 +209,8 @@ boxPais.bind('<<ComboboxSelected>>', selecionando)
 
 
 janela.mainloop()
+
+'''
+Desenvolvido por Leonardo Alves
+Contato: leon4rdoalvess@gmail.com
+'''
