@@ -76,3 +76,8 @@ def verGasto():
         for linha in linhas:
             gastos.append(linha)
     return gastos
+
+'''
+Desenvolvido por Leonardo Alves
+Contato: leon4rdoalvess@gmail.com
+'''
