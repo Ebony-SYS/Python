@@ -10,10 +10,10 @@ Acompanhe o desenvolvimento → [Canal códigos simples](https://www.youtube.com
 <table>
  <tr>
   <td>
-   <img src="TextoemAudio/img/screen one.jpg"  title="img1">
+   <img src="01_TextoemAudio/img/screen one.jpg"  title="img1">
   </td>
   <td>
-   <img src="TextoemAudio/img/screen error.jpg"  title="img2">
+   <img src="01_TextoemAudio/img/screen error.jpg"  title="img2">
   </td>
  </tr>
 </table> 
@@ -23,10 +23,10 @@ Acompanhe o desenvolvimento → [Canal códigos simples](https://www.youtube.com
 <table>
  <tr>
   <td>
-   <img src="FakeData/img/principalScreen.jpg"  title="img1">
+   <img src="02_FakeData/img/principalScreen.jpg"  title="img1">
   </td>
   <td>
-   <img src="FakeData/img/main screen filled.jpg"  title="img2">
+   <img src="02_FakeData/img/main screen filled.jpg"  title="img2">
   </td>
  </tr>
 </table> 
