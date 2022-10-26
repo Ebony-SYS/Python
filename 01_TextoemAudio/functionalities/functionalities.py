@@ -22,3 +22,8 @@ def initWindow():
                sg.Button('Ler arquivo', key='fileReading')]]
 
     return sg.Window('@ebony.programador | Códigos Simples', layout=layout, finalize=True, element_justification='c')
+
+'''
+Desenvolvido por Leonardo Alves
+Contato: leon4rdoalvess@gmail.com
+'''

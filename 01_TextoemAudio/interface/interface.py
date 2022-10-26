@@ -25,3 +25,8 @@ while True:
         if filePath == '':
             window['fileSelected'].update('Hey, selecione um arquivo!', text_color='red')
 window.close()
+
+'''
+Desenvolvido por Leonardo Alves
+Contato: leon4rdoalvess@gmail.com
+'''
