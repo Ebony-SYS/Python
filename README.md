@@ -3,7 +3,7 @@
         <img src="https://i.imgur.com/bfGaDmV.png" title="source: imgur.com" height="50px"/>
     </div>    
     <div>
-        <p style="padding-left:10px; color:green">Projeto em Python</p>
+        <p style="padding-left:10px; color:green">Projetos em Python</p>
     </div>
 </div> 
 <p>
@@ -15,25 +15,33 @@
     <h3>Projetos prontos!</h3>
     <h5 align="center">Lendo Texto em Áudio.</h5>
     <table>
-     <tr>
-      <td>
-       <img src="01_TextoemAudio/img/screen one.jpg"  title="img1">
-      </td>
-      <td>
-       <img src="01_TextoemAudio/img/screen error.jpg"  title="img2">
-      </td>
-     </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/Ebony-SYS/Python/tree/main/01_TextoemAudio">
+                    <img src="01_TextoemAudio/img/screen one.jpg"  title="img1">
+                </a>      
+            </td>
+            <td>
+                <a href="https://github.com/Ebony-SYS/Python/tree/main/01_TextoemAudio">
+                    <img src="01_TextoemAudio/img/screen error.jpg"  title="img2">
+                </a>
+            </td>
+        </tr>
     </table>
     <br><h5 align="center">FakeData (Dados aleatórios)</h5>
     <table>
-     <tr>
-      <td>
-       <img src="02_FakeData/img/principalScreen.jpg"  title="img1">
-      </td>
-      <td>
-       <img src="02_FakeData/img/main screen filled.jpg"  title="img2">
-      </td>
-     </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/Ebony-SYS/Python/tree/main/02_FakeData">
+                    <img src="02_FakeData/img/principalScreen.jpg"  title="img1">
+                </a>      
+            </td>
+            <td>
+                <a href="https://github.com/Ebony-SYS/Python/tree/main/02_FakeData">
+                    <img src="02_FakeData/img/main screen filled.jpg"  title="img2">
+                </a>      
+            </td>
+        </tr>
     </table>
     <br><h5 align="center">Covid19</h5>
     <div align="center">
