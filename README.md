@@ -24,7 +24,7 @@
       </td>
      </tr>
     </table>
-    <h5 align="center">FakeData (Dados aleatórios)</h5>
+    <br><h5 align="center">FakeData (Dados aleatórios)</h5>
     <table>
      <tr>
       <td>
@@ -35,7 +35,7 @@
       </td>
      </tr>
     </table>
-    <h5 align="center">Covid19</h5>
+    <br><h5 align="center">Covid19</h5>
     <div align="center">
         <a href="https://github.com/Ebony-SYS/Python/tree/main/05_Covid">
         <img src="https://user-images.githubusercontent.com/52077278/198378838-2327f903-3239-4954-9404-1158f3b30422.gif">
