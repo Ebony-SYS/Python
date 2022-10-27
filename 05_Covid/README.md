@@ -1,4 +1,4 @@
-<div class="container" style="display:flex; justify-content:center; margin-top:10px">
+<div align="center" class="container" style="display:flex; justify-content:center; margin-top:10px">
     <div>
         <img src="https://i.imgur.com/bfGaDmV.png" title="source: imgur.com" height="50px"/>
     </div>    
