@@ -1,4 +1,4 @@
-<div class="container" style="display:flex; justify-content:center; margin-top:10px">
+<div align="center" class="container" style="display:flex; justify-content:center; margin-top:10px">
     <div>
         <img src="https://i.imgur.com/bfGaDmV.png" title="source: imgur.com" height="50px"/>
     </div>    
@@ -37,3 +37,6 @@
     Instalação via terminal: pip install requests
 </p>
 </div>
+
+<div align="center"><a href="../README.md"><img src="https://i.imgur.com/kfHCxif.png" title="source: imgur.com" width="5%"/></a></div>
+<div align="center">Home</div>
