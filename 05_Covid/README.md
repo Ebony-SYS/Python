@@ -3,7 +3,7 @@
         <img src="https://i.imgur.com/bfGaDmV.png" title="source: imgur.com" height="50px"/>
     </div>    
     <div>
-        <p style="padding-left:10px; color:green">Projeto em Python</p>
+        <p style="padding-left:10px; color:green">Projetos em Python</p>
     </div>
 </div>
 <h1 align="center" style="margin-top:-10px">COVID-19 em tempo real.</h1>
@@ -16,7 +16,7 @@
     neste trecho do código:  
 <img src="https://i.imgur.com/JXqbXXS.jpg"/>
 
-    Lembrando que os nomes deve ser inseridos em inglês!
+    Lembrando que os nomes devem ser inseridos em inglês!
 </p>
 
 <div align="center">
