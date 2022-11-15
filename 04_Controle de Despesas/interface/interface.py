@@ -1,6 +1,10 @@
 from tkinter import *
 from tkinter import Tk, ttk
+from tkinter.ttk import Progressbar
 from PIL import Image, ImageTk
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from matplotlib.figure import Figure
+import matplotlib.pyplot as plt
 
 # ---------- ROOT ------------ ↓
 preto = '#000'
@@ -50,10 +54,35 @@ labelLogo = Label(frameTopo, image=imgLogo, text='Ebony SyS', width=900, compoun
                   padx=5, relief=RAISED, anchor=CENTER, font='Verdana 14 bold italic',
                   bg=dark1, fg=branco, borderwidth=0)
 labelLogo.place(x=0, y=0)
+
+
 # __________________________ POSICIONANDO LOGO NO FRAMETOPO __________________________ ↑
 
+# __________________________ BARRA DE PORCENTAGEM __________________________ ↓
+
+def porcentagem():
+    labelPorcentagem = Label(frameGrafico, text='Porcentagem de gastos', height=1, anchor=NW,
+                             font=('Verdana 12'), bg=dark1, fg=cinza)
+    labelPorcentagem.place(x=40, y=5)
+
+    style = ttk.Style()
+    style.theme_use('default')
+    style.configure('black.Horizonal.TProgressbar', background='#59b356')
+    style.configure('TProgressbar', thickness=20)
+
+    barra = Progressbar(frameGrafico, length=188, style='black.Horizontal.TProgressbar')
+    barra.place(x=15, y=35)
+    barra['value'] = 50
+
+    valor = 50
+
+    labelValor = Label(frameGrafico, text=f'{valor:.1f}%', anchor=NW, font=('Verdana 12'),
+                       bg=dark1, fg=cinza)
+    labelValor.place(x=210, y=35)
 
 
+# __________________________ BARRA DE PORCENTAGEM __________________________ ↑
 
+
+porcentagem()
 janela.mainloop()
-
